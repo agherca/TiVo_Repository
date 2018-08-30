@@ -1,8 +1,8 @@
-9th august
+9th august 2018
   DebugPrintEdit TvAesMiddlemindRoute -F 10 && tail -f -n40 /var/tmp/TmkDebug.tmp
   DebugPrintEdit TvAesUiNavigateOp -F 30
 
-17th august
+17th august 2018
   https://wiki.tivo.com/wiki/Netflix_Test_Accounts
   Account                Password    Used By     Details
   tester_tivo_us_2@netflix.com    tivo1234    Dan Gillen    endDate=01/01/2020
@@ -15,7 +15,7 @@
   tester_tivo_us_9@netflix.com    tivo12        Raja Koduri    endDate=01/01/2020
   tester_tivo_us_10@netflix.com    tivo12        Field Trials    endDate=01/01/2020
 
-30th august
+30th august 2018
   Boxes Petrica Toderica
   Mini4K A9502B9B88A6790
   Bolt 8D9000190315D6C
