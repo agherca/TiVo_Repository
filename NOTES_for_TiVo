@@ -24,7 +24,15 @@
   MiniLeo AD3000190BFBB2F
   Bolt 8F90001901E26BD
 
-
+25th January 2019
+  RF4CE application for remotes, not available for all/old boxes
+  Add "handcraft=true" at the end of the boot command
+  After boot up, "telnet box.ip" to the box
+    rf4cecmd  -f /dev/hiddev1 -c
+    rf4cecmd -f /dev/hiddev1 -p 30
+    rf4cecmd -f /dev/hiddev1 -a 10
+      And a command that I couldn't make it work:
+      HpkRemoteOutputTest -source 0 -pairtest
 
 
 
