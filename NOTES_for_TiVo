@@ -34,9 +34,16 @@
       And a command that I couldn't make it work:
       HpkRemoteOutputTest -source 0 -pairtest
 
-
-
-
+6th February 2019
+  Make setup-roots with parts of the nuild (parts like toolroot). These parts can be taken from other/newer builds.
+  cd .../srcroot/
+  source SOURCEME dev-flavour
+  observe:
+    SETUP_FLAGS  = --from /net/nasfs01.tivo.com/ifs/unixroot/engineering/dist_nfs/dist_nfs_qt/dist/rpms/b-tcdclient-mira-4-1/2017.07.24-1051 --to toolroot,root,tivoroot,testroot --p4sync --clean
+  remove:
+    -p4sync , --clean
+    toolroot
+  dcbe /usr/tivo/bin/update-roots --from /net/nasfs01.tivo.com/ifs/unixroot/engineering/dist_nfs/dist_nfs_qt/dist/rpms/b-tcdclient-mira-4-1/2017.07.24-1051 --to root,tivoroot,testroot
 
 
 
