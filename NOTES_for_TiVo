@@ -45,8 +45,19 @@
     toolroot
   dcbe /usr/tivo/bin/update-roots --from /net/nasfs01.tivo.com/ifs/unixroot/engineering/dist_nfs/dist_nfs_qt/dist/rpms/b-tcdclient-mira-4-1/2017.07.24-1051 --to root,tivoroot,testroot
 
-
-
-
+12th February 2019
+  Activate debug logs in TcdClient through Telnet (25th-31st October 2017)
+    e.g. in TvRecorder.C look for SETUP_DEBUG_ENV("RECORDER");
+    DebugPrintEdit RECORDER -C 10;
+    DebugPrintEdit RECORDER -F 5;
+    Logs written with TmkLogger can e found in /var/log/tvlog and/or in /var/log/tverr and/or in /var/tmp/TmkDebug.tmp
+    Logs written in file (-F) can be easily monitored using:
+      tail -f -n23 /var/tmp/TmkDebug.tmp | grep -i ADGH
+    
+  Activate debug logs in TcdPlatform through Telnet
+    e.g. TV_HPK_MODULE("HpkTivoRemoteInput");
+    HpkLogDebug HpkTivoRemoteUapi -C 5
+        HpkTivoRemoteInput                       : log level = 5 (debug  ), logging to stdout
+    
 
 
