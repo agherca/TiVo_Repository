@@ -58,6 +58,12 @@
     e.g. TV_HPK_MODULE("HpkTivoRemoteInput");
     HpkLogDebug HpkTivoRemoteUapi -C 5
         HpkTivoRemoteInput                       : log level = 5 (debug  ), logging to stdout
+        
+14th February 2019
+  Fix guided (initial) setup issue related to certifcates and date
+  Narcisa Nistor:
+    Venky: "echo 1 > /db/NPK_SMARTBOX_BLOCK_STT - this step is expected to fix the time sync issue."
+    http://pdk01.st.tivo.com:8085/mind/mind26?type=bodySslCertGet&bodyId=tsn:DE200000001555E&swVersion=b-tcdclient-harmony
     
 
 
