@@ -65,5 +65,11 @@
     Venky: "echo 1 > /db/NPK_SMARTBOX_BLOCK_STT - this step is expected to fix the time sync issue."
     http://pdk01.st.tivo.com:8085/mind/mind26?type=bodySslCertGet&bodyId=tsn:DE200000001555E&swVersion=b-tcdclient-harmony
     
+18th March 2019
+  How to boot Topaz (series 7) boxes
+    Plug PC ethernet cable in the same switch in which the box is connected.
+    Then run these commands through serial:
+      ifconfig 10.131.4.29 255.0.0.0 10.130.0.1 8.8.8.8
+      tivoboot -tftp=10.131.5.52:Topaz_Tec02/vmlinux.bdl 'nfsinit=10.131.5.52:/home/agherca/sandbox/agherca-workspace2/b-tcdpkg-harmony/dev-arm64/tivo_root rw'
 
 
