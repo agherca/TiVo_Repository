@@ -72,4 +72,8 @@
       ifconfig 10.131.4.29 255.0.0.0 10.130.0.1 8.8.8.8
       tivoboot -tftp=10.131.5.52:Topaz_Tec02/vmlinux.bdl 'nfsinit=10.131.5.52:/home/agherca/sandbox/agherca-workspace2/b-tcdpkg-harmony/dev-arm64/tivo_root rw'
 
-
+4th April 2019
+  Alexandru Gologan:
+    Pentru orice incident: https://tivo.service-now.com/ess/ Puteti modifica tichetul sa ajunga in coada direct la Iasi IT
+      (Assignment Group = IT CS – Iasi) dupa ce il creati.
+    Per email: *Cable guy switcheroo* din Feb, 12
