@@ -77,3 +77,15 @@
     Pentru orice incident: https://tivo.service-now.com/ess/ Puteti modifica tichetul sa ajunga in coada direct la Iasi IT
       (Assignment Group = IT CS – Iasi) dupa ce il creati.
     Per email: *Cable guy switcheroo* din Feb, 12
+    
+10th April 2019
+  Tiberiu Teodorescu (bug 512795, comment 80-81):
+    Install QE build on TiVo STB:
+      bash-3.2 # export PACKSRV=nfsproxy.tivo.com:/packs/packs_qt/packs
+      bash-3.2 # export KITSRV=nfsproxy.tivo.com:/kits
+      bash-3.2 # /tools/install-release b-tcdpkg-harmony.2019.04.10-rest_of_build_ID
+      bash-3.2 # sync && reboot
+    After installation boot using this command:
+      boot -tftp=10.131.14.176:ArgonRoamio_gen10/vmlinux.px 'root=/dev/mmca4'
+
+ 
