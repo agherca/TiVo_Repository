@@ -88,4 +88,30 @@
     After installation boot using this command:
       boot -tftp=10.131.14.176:ArgonRoamio_gen10/vmlinux.px 'root=/dev/mmca4'
 
- 
+  7th May 2019
+    Stefan Balmus 
+      Reboot reason on the TiVo box from sticky_file
+        Telnet box_ip
+        cat /db/sticky
+        { REASON_UNKNOWN  = 0,
+          REASON_PANIC    = 1,
+          REASON_CRASHALL = 2,
+          REASON_SWUPGRADE = 3,
+          REASON_EXTERNALSTORAGE_RESTART = 4,
+          REASON_RESTARTORRESET = 5,
+          REASON_CRASH_SINGLE = 6,
+          REASON_WATCHDOG_RESTART = 7,
+          REASON_AUTO_RESTART = 8,
+          REASON_IPTV_DOWNLOADED = 9,
+          REASON_FORCED_REBOOT = 10,
+          REASON_DRIVE_UNPLUGGED = 11,
+          REASON_FSFIX_REBOOT = 12,
+          REASON_MFS_REBOOT = 13,
+          REASON_ZAP_REQUEST = 14,
+          REASON_BOOTMODE_CHANGE = 15,
+          REASON_STARTUP_CHECKLIST_REBOOT = 16,
+          REASON_OVERHEAT = 17,
+        }RebootReason;
+
+
+
